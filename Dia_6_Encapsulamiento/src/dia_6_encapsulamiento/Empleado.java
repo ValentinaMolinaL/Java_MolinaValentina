@@ -1,13 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package dia_6_encapsulamiento;
 
-/**
- *
- * @author Uniminuto Tibu
- */
 public class Empleado {
     
     private String nombre;
@@ -43,19 +36,14 @@ public class Empleado {
         return salario;
     }
 
-    public void setSalario(double verificacion) {
-        if (verificacion > 0){
-            salario = salario + verificacion;
-            System.out.println("la cantidad esta bien");
+    public void setSalario(double salario){
+        if(salario>0){
+            this.salario = salario;
         }else{
-            System.out.println("la cantidad debe ser positiva");
+            System.out.println("La cantidad debe ser positiva.");
         }
     }
-
-    
-    
-    
-    
-
-    
+    public void mostrarInformacion(){
+        System.out.println("Empleado{" + "nombre=" + nombre + ", id=" + id + ", salario=" + salario + '}');
+    }
 }
