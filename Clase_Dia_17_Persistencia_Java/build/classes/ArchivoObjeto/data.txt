@@ -1,0 +1,1 @@
+Persona{id=1, nombre=va, edad=21}
